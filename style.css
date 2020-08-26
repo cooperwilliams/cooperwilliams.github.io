@@ -1,0 +1,10 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-image: url(picture.PNG);
+background-size: cover;
+background-position center;
+font-family: sans-serif;
+}
