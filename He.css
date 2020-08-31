@@ -1,0 +1,20 @@
+body {
+	margin:0;
+	background-color: black;
+	position:fixed;
+	color:white;
+}
+#range{
+	position:absolute;
+	top:0;
+	left:0;
+	color:white;
+	font-size:0.8em;
+	z-index:2;
+	border-bottom:0.5px solid white;
+	border-right:0.5px solid white;
+	padding:10px;
+}
+span, input{
+	margin:5px;
+}
