@@ -1,0 +1,63 @@
+.statusbar-container, .statusbar, .statusbar > * {
+    height: 1.15rem;
+}
+
+.statusbar-container {
+    user-select: none;
+    -moz-user-select: none;
+    background-color: #4a4a4a;
+
+    border: 0 solid #383838;
+    border-right-width: 1px;
+}
+
+.statusbar {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+.statusbar > * {
+    box-sizing: border-box;
+
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 0.7rem;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 1.08rem;
+}
+
+.status-zoom {
+    width: 3.5rem;
+    background-color: #454545;
+}
+
+.status-action {
+    border: 0 solid #424242;
+    border-width: 1px 1px 0 1px;
+    position: relative;
+    width: 14rem;
+    background-color: #535353;
+}
+
+.status-action > span {
+    position: relative;
+    z-index: 1000;
+}
+
+.status-action-percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    height: 100%;
+    background-color: #0f64d2;
+}
+
+.status-error {
+    padding-left: 8px;
+    font-size: 0.77rem;
+    border: none;
+    position: relative;
+    z-index: 1000;
+}

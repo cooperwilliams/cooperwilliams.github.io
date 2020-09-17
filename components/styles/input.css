@@ -1,0 +1,117 @@
+.input-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input-label {
+    color: #d6d6d6;
+    font-size: 0.84rem;
+    margin-right: 0.4rem;
+
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.input-label--rightside {
+    margin-right: 0;
+    margin-left: 0.4rem;
+}
+
+.input {
+    height: 1.5rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+    background-color: #454545;
+    border: 1px solid #666666;
+    border-radius: 0.2rem;
+
+    color: #f0f0f0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.input-select-container {
+    position: relative;
+}
+
+.input-select {
+    height: 1.5rem;
+    padding: 0 1.1rem 0 0.25rem;
+    box-sizing: border-box;
+    background-color: #454545;
+    border: 1px solid #666666;
+    border-radius: 0.2rem;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    color: #f0f0f0;
+    font-size: 0.84rem;
+}
+
+.input-select-arrow {
+    position: absolute;
+    pointer-events: none;
+    top: calc(100%/2 - 1.05rem/2);
+    right: 0.15rem;
+    height: 1.05rem;
+    width: 1.05rem;
+    fill: #c1c1c1;
+}
+
+.input-select:focus, .input:focus {
+    outline: none;
+    border: 1px solid #0078d7;
+}
+
+.input-slider {
+    background-color: #757575;
+    height: 3px;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.input-slider:focus {
+    outline: none;
+}
+
+.input-slider::-webkit-slider-thumb, .input-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0.1rem;
+    width: 4px;
+    height: 11px;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.input-slider + .input {
+    margin-left: 6px;
+}
+
+.input-checkbox {
+    position: relative;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 0.15rem;
+    background-color: #d4d4d4;
+}
+
+.input-checkbox--checked:after {
+    position: absolute;
+    top: 0;
+    left: 0.07rem;
+    content: "✓";
+    color: #323232;
+    font-weight: 800;
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}

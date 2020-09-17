@@ -1,0 +1,50 @@
+.menu-option {
+    position: relative;
+    height: 1.35rem;
+    padding: 1px 0.3rem 2px 1.25rem;
+    box-sizing: border-box;
+
+    color: black;
+    line-height: 1.15rem;
+}
+
+.menu-option:hover {
+    background-color: #0078d7;
+    color: white;
+}
+
+.menu-option--checked:before {
+    position: absolute;
+    content: "✓";
+    font-weight: 800;
+    font-size: 0.8rem;
+    left: 0.3rem;
+    top: 0px;
+}
+
+.menu-option--disabled, .menu-option--disabled:hover {
+    color: #6d6d6d;
+}
+
+.menu-option-divider {
+    height: 1px;
+    background-color: #a0a0a0;
+    margin: 3px 2px;
+}
+
+.menu-folder--hasMenu > * {
+    width: calc(100% + 0.8rem);
+}
+
+.menu-folder--hasMenu > .menu-option-divider {
+    width: calc(100% + 0.5rem);
+}
+
+.menu-option--menu:after {
+    position: absolute;
+    content: "🢒";
+    font-weight: 800;
+    font-size: 1.6rem;
+    right: 0.3rem;
+    top: -0.05rem;
+}
