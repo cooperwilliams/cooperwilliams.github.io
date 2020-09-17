@@ -1,1 +1,0 @@
-# cooperwilliams.github.io
