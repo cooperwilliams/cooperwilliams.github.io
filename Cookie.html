@@ -11,6 +11,7 @@
             <a href="javascript:void(0);" onclick="addPoints(1)">
                 <img src="Cookie.PNG" />
                 <link rel="stylesheet" src="Cookie.css">
+                <button onclick="buy()" >test</button>
             </a>
         </div>
     </div>
@@ -18,6 +19,15 @@
     <script>
         var points = 0,
     score = document.getElementById("score");
+        
+        function buy() {
+          addPoints(-1)  
+        }
+        
+        function autoclickpoints() {
+            console.log('auto');
+            addPoints(1);
+        }
 
 function addPoints(increase) {
     console.log('hit');
