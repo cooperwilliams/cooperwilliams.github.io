@@ -1,12 +1,27 @@
-<button onclick="func(1)">click cookie</button><br>
-<div id="results"></div>
-<script>
-var counter = 1;
+</head>
+<body>
+    <header>
+        <h1>Points: </h1>
+        <span id="score"></span>
+    </header>
+    <div class="container">
+        <div>
+            <a href="javascript:void(0);" onclick="addPoints(1)">
+                <img src="assets/graphics/Friis.png" />
+            </a>
+        </div>
+    </div>
 
-function func(id) {
-    if (id != counter)
-        return;
-    document.getElementById('results').innerHTML+="cookie added<br>";
-    counter++;
-}
-</script>
+    <script>
+        var points = 0,
+    score = document.getElementById("score");
+
+function addPoints(increase) {
+    console.log('hit');
+    points += increase;
+
+    score.innerHTML = '' + points;
+};
+    </script>
+</body>
+</html>
