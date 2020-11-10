@@ -1,0 +1,12 @@
+<button onclick="func(1)">Button No. 1</button><br>
+<div id="results"></div>
+<script>
+var counter = 1;
+
+function func(id) {
+    if (id != counter)
+        return;
+    document.getElementById('results').innerHTML+="Button No. "+id+" was pressed<br>";
+    counter++;
+}
+</script>
