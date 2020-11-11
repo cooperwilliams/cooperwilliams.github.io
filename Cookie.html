@@ -33,10 +33,10 @@
         }
         
         function autoclickpoints() {
-           repeat(1) {
 	    console.log('auto');
             addPoints(1);
-	   }
+	    await delay(5000);
+	    autoclickpoint()
 	}
 
 
