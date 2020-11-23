@@ -15,6 +15,7 @@ var cookiecount = 0;
   background-color: lightblue;    
   text-align: center;
 }
+
 </style>
     <div class="shop">
         <div>
@@ -25,35 +26,28 @@ var cookiecount = 0;
            <img src="Cookieclick.PNG" >
 		</a>
         </div>
-
-    <script>
-        var points = 0,
-    score = document.getElementById("score");
-        
-        function buyauto() {
-          buy()
-          buy()
-          buy()
-          autoclickpoints()
-        }
-        
-        function buy() {
-          addPoints(-1)  
-        }
-        
-        function autoclickpoints() {
-	    console.log('auto');
-            addPoints(1)
-	    autoclickpoint()
+	    </br></br>
+YOU GOT:
+<input type="text" id="text" disabled style= text-align:center>
+    <script>	 
+	function add() {
+		cookiecount = cookiecount + 1;
+		document.getElementById('text').value = cookiecount;
+		document.title = cookiecount + " cookies";
 	}
+	    
+        
 
-
-function addPoints(increase) {
-    console.log('hit');
-    points += increase;
-
-    score.innerHTML = '' + points;
-};
     </script>
+<button><a href="#" onClick="Save()">Save</a></button>
+<button><a href="#" onClick="Load()">Load</a></button>
+<script>
+function Save() {
+	localStorage.setItem("cookiecount", cookiecount)
+};
+function Load() {
+	cookiecount = localStorage.setItem("cookiecount")
+};
+</script>
 </body>
 </html>
