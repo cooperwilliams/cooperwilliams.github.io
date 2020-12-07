@@ -1,17 +1,18 @@
 <script>
 function passWord() {
 var testV = 1;
-var pass1 = prompt('PleasE EnteR a cHeaT codE',' ');
+var pass1 = prompt('Please enter a cheat code',' ');
 while (testV < 3) {
 if (!pass1) 
 history.go(-1);
-if (pass1.toLowerCase() == " peerhte") {
-alert('You Got it Right!');
+if (pass1.toLowerCase() == " life+1") {
+alert('extra life!');
+
 break;
 } 
 testV+=1;
 var pass1 = 
-prompt('invalid cheat code','Password');
+prompt('invalid cheat code',' ');
 }
 if (pass1.toLowerCase()!="password" & testV ==3) 
 history.go(-1);
