@@ -2,6 +2,30 @@
 <head>
 <title>cube game</title>
   <meta name="viewport" content="width=device-width, user-scalable=no" />
+	<script>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please enter a cheat code',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == " life+10") {
+alert('ten up!');
+life ++ 10;
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('invalid cheat code',' ');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</script>
+<FORM>
+<input align="top" type="button" value="Enter cheat code" onClick="passWord()">
+</FORM>
   <style>
 	canvas {
 	  border: 1px solid white;
@@ -242,29 +266,5 @@
 	  step();
 	});
   </script>
-<script>
-function passWord() {
-var testV = 1;
-var pass1 = prompt('Please enter a cheat code',' ');
-while (testV < 3) {
-if (!pass1) 
-history.go(-1);
-if (pass1.toLowerCase() == " life+10") {
-alert('ten up!');
-life ++ 10;
-break;
-} 
-testV+=1;
-var pass1 = 
-prompt('invalid cheat code',' ');
-}
-if (pass1.toLowerCase()!="password" & testV ==3) 
-history.go(-1);
-return " ";
-} 
-</script>
-<FORM>
-<input align="top" type="button" value="Enter cheat code" onClick="passWord()">
-</FORM>
 </body>
 </html>
