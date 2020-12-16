@@ -1,5 +1,9 @@
 <script>
-var cookiecount = 0;	
+var cookiecount = 0;
+	function reset() {
+		    
+		    var cookiecount = 0;	
+	    };
 </script>
 <head>
 	<title>cookie clicker</title>
@@ -38,10 +42,7 @@ function Save() {
 function Load() {
 	cookiecount = localStorage.setItem("cookiecount")
 };
-	function reset() {
-		    
-		    var cookiecount = 0;	
-	    };
+	
 </script>
 </body>
 </html>
