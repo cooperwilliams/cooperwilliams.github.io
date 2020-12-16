@@ -37,10 +37,10 @@ YOU GOT:
 <button><a href="#" onClick="reset()">reset</a></button>
 <script>
 function Save() {
-	localStorage.setItem("cookiecount", cookiecount)
+	document.cookie = "num=cookies";
 };
 function Load() {
-	cookiecount = localStorage.setItem("cookiecount")
+	document.cookie.split(';').map(cookie => cookie.split('=')).reduce((accumulator;
 };
 	
 </script>
