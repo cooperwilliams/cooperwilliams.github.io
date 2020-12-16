@@ -24,10 +24,7 @@ YOU GOT:
 		document.getElementById('text').value = cookiecount;
 		document.title = cookiecount + " cookies";
 	};
-	    function reset() {
-		    
-		    var cookiecount = 0;	
-	    };
+	    
         
 
     </script>
@@ -36,11 +33,15 @@ YOU GOT:
 <button><a href="#" onClick="reset()">reset</a></button>
 <script>
 function Save() {
-	 <script src="http://jswebsite.co.nf/code-tester-javascript.min.js"></script>
+	localStorage.setItem("cookiecount", cookiecount)
 };
 function Load() {
 	cookiecount = localStorage.setItem("cookiecount")
 };
+	function reset() {
+		    
+		    var cookiecount = 0;	
+	    };
 </script>
 </body>
 </html>
