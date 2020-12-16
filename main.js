@@ -14,5 +14,5 @@ setTimeout(() => {
 }, 2000);
 
 listbutton.addEventListener("click",() => {
- var name = window. alert("cookies" + document.cookie)
+ var name = window. alert("cookies" + document.cookie);
 });
