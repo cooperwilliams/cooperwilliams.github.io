@@ -3,11 +3,15 @@ const cookieButton = document.querySelector(".cookie-btn");
 
 cookieButton.addEventListener("click", () => {
   cookieContainer.classList.remove("active");
-  localStorage.setItem("cookieBannerDisplayed", "true");
+  document.cookie = "name=ok;expires=Monday, 3-Sep-9999 99:99:99 EST";
 });
 
 setTimeout(() => {
-  if (!localStorage.getItem("cookieBannerDisplayed")) {
-    cookieContainer.classList.add("active");
+  if (!document.cookie("cookieBannerDisplayed")) {
+    cookieContainer.classList.active");
   }
 }, 2000);
+
+listbutton.addEventListener("click",() => {
+  system.printout(document.cookie)
+});
