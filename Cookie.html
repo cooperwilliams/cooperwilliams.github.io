@@ -1,9 +1,21 @@
 <script>
+	function sleep(milliseconds) {
+  const date = Date.now();
+  let currentDate = null;
+  do {
+    currentDate = Date.now();
+  } while (currentDate - date < milliseconds);
+}
+
+
+
 	var hi = 0
 	function givecookies() {
 		
 		while (hi = 0) {
   add()
+			
+sleep(2000);
 }
 	}
 	
