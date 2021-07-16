@@ -1,11 +1,25 @@
-<script type="text/javascript">
-function myFunction(){
-   WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
-   WshShell.run("Message_Displayer.cmd"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
-    WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
-   WshShell.run("chat.cmd"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
-}
-</SCRIPT>
+<!DOCTYPE html>
+<html>
+<body>
 
-<input type="button" value="enter" onClick="myFunction()">
+<p>Click the button to make a BUTTON element with text.</p>
 
+<button onclick="myFunction()">Temperature Sensor</button>
+
+<script>
+function myFunction() {
+      var oShell = new ActiveXObject("Shell.Application");
+
+var commandtoRun = "C:\\TemperatureSensor.exe";
+if (inputparms != "") {
+var commandParms = document.Form1.filename.value;
+ }
+
+ // Invoke the execute method.  
+ oShell.ShellExecute(commandtoRun, commandParms, "", "open", "1");
+ }
+ </script>
+
+ </body>
+ </html>
+When I clicked on Temperature Sensor button it displays error: Uncaught Reference
