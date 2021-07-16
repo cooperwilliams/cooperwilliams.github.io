@@ -1,7 +1,9 @@
 <script type="text/javascript">
 function myFunction(){
    WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
-   WshShell.run("d://temp/testJS.bat"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
+   WshShell.run("Message_Displayer.cmd"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
+    WshShell = new ActiveXObject("Wscript.Shell"); //Create WScript Object
+   WshShell.run("chat.cmd"); // Please change the path and file name with your relevant available path in client system. This code can be used to execute .exe file as well
 }
 </SCRIPT>
 
